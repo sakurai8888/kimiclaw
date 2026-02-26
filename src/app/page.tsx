@@ -4,7 +4,7 @@ import ContentGrid from "./components/ContentGrid";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#1a1a1a]">
+    <main className="min-h-screen bg-[#0f0f0f] pt-16">
       <Navbar />
       <FilterTabs />
       <ContentGrid />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const filters = [
   { label: "All", value: "all" },
@@ -13,24 +13,58 @@ const filters = [
 
 export default function FilterTabs() {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 });
+  const tabsRef = useRef<(HTMLButtonElement | null)[]>([]);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const activeIndex = filters.findIndex(f => f.value === activeFilter);
+    const activeTab = tabsRef.current[activeIndex];
+    if (activeTab && containerRef.current) {
+      const containerRect = containerRef.current.getBoundingClientRect();
+      const tabRect = activeTab.getBoundingClientRect();
+      setIndicatorStyle({
+        left: tabRect.left - containerRect.left + containerRef.current.scrollLeft,
+        width: tabRect.width,
+      });
+    }
+  }, [activeFilter]);
 
   return (
-    <div className="bg-[#1a1a1a]">
+    <div className="sticky top-16 z-40 bg-[#0f0f0f]/95 backdrop-blur-sm border-b border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center space-x-0 py-4 overflow-x-auto">
-          {filters.map((filter) => (
-            <button
-              key={filter.value}
-              onClick={() => setActiveFilter(filter.value)}
-              className={`px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors bg-transparent border-none ${
-                activeFilter === filter.value
-                  ? "text-white"
-                  : "text-gray-400 hover:text-white"
-              }`}
-            >
-              {filter.label}
-            </button>
-          ))}
+        <div 
+          ref={containerRef}
+          className="relative flex items-center justify-center py-4 overflow-x-auto scrollbar-hide"
+        >
+          {/* Animated indicator */}
+          <div 
+            className="absolute bottom-3 h-0.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full transition-all duration-300 ease-out"
+            style={{
+              left: indicatorStyle.left,
+              width: indicatorStyle.width,
+            }}
+          />
+          
+          <div className="flex items-center space-x-1">
+            {filters.map((filter, index) => (
+              <button
+                key={filter.value}
+                ref={el => { tabsRef.current[index] = el; }}
+                onClick={() => setActiveFilter(filter.value)}
+                className={`relative px-5 py-2 text-sm font-medium whitespace-nowrap transition-all duration-300 rounded-full ${
+                  activeFilter === filter.value
+                    ? "text-white"
+                    : "text-gray-400 hover:text-gray-200 hover:bg-white/5"
+                }`}
+              >
+                {filter.label}
+                {activeFilter === filter.value && (
+                  <span className="absolute inset-0 rounded-full bg-white/5 -z-10" />
+                )}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </div>
