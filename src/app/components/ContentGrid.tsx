@@ -130,11 +130,7 @@ export default function ContentGrid() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0f0f0f] to-[#0a0a0a] py-8 pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="mb-8 text-center">
-          <h2 className="text-2xl font-bold text-gradient mb-2">Latest Releases</h2>
-          <p className="text-gray-500 text-sm">Explore our newest music, videos, and more</p>
-        </div>
+
 
         {/* Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">

@@ -10,7 +10,7 @@ const navItems = [
   { label: "Biography", href: "#" },
   { label: "Discography", href: "#" },
   { label: "Store", href: "#" },
-  { label: "FATHER&MOTHER", href: "#" },
+  { label: "FATHER&MOTHER", href: "/father-mother" },
 ];
 
 const socialIcons = [

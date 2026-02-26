@@ -1,9 +1,7 @@
-[00:00:00.679] Server  LOG     
-[00:00:00.679] Server  LOG       We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
-[00:00:00.680] Server  LOG       The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
-
-[00:00:00.680] Server  LOG       	- include was updated to add 'dist/types/**/*.ts'
-[00:00:00.680] Server  LOG       	- include was updated to add 'dist/dev/types/**/*.ts'
-[00:00:00.680] Server  LOG     
-[00:00:00.797] Server  LOG     ✓ Ready in 565ms
-[00:00:04.276] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.933] Server  LOG     ✓ Ready in 703ms
+[00:00:04.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.055] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:28.079] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:34.004] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:41.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

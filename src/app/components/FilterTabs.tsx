@@ -31,7 +31,7 @@ export default function FilterTabs() {
   }, [activeFilter]);
 
   return (
-    <div className="sticky top-16 z-40 bg-[#0f0f0f]/95 backdrop-blur-sm border-b border-white/5">
+    <div className="sticky top-16 z-30 bg-[#0f0f0f] border-b border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={containerRef}
