@@ -15,17 +15,17 @@ export default function FilterTabs() {
   const [activeFilter, setActiveFilter] = useState("all");
 
   return (
-    <div className="bg-[#1a1a1a] border-b border-gray-800">
+    <div className="bg-[#1a1a1a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center space-x-1 py-3 overflow-x-auto">
+        <div className="flex items-center justify-center space-x-0 py-4 overflow-x-auto">
           {filters.map((filter) => (
             <button
               key={filter.value}
               onClick={() => setActiveFilter(filter.value)}
-              className={`px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors rounded ${
+              className={`px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors bg-transparent border-none ${
                 activeFilter === filter.value
-                  ? "text-white bg-gray-700"
-                  : "text-gray-400 hover:text-white hover:bg-gray-800"
+                  ? "text-white"
+                  : "text-gray-400 hover:text-white"
               }`}
             >
               {filter.label}
