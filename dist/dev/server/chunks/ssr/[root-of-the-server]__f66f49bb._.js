@@ -44,7 +44,7 @@ const navItems = [
     },
     {
         label: "Store",
-        href: "#"
+        href: "/store"
     },
     {
         label: "FATHER&MOTHER",

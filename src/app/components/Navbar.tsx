@@ -9,7 +9,7 @@ const navItems = [
   { label: "Media", href: "#" },
   { label: "Biography", href: "#" },
   { label: "Discography", href: "#" },
-  { label: "Store", href: "#" },
+  { label: "Store", href: "/store" },
   { label: "FATHER&MOTHER", href: "/father-mother" },
 ];
 
