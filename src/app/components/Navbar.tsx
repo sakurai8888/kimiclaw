@@ -7,7 +7,7 @@ const navItems = [
   { label: "Live", href: "#" },
   { label: "Video", href: "#" },
   { label: "Media", href: "#" },
-  { label: "Biography", href: "#" },
+  { label: "Biography", href: "/biography" },
   { label: "Discography", href: "/discography" },
   { label: "Store", href: "/store" },
   { label: "FATHER&MOTHER", href: "/father-mother" },
@@ -34,9 +34,9 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 w-[180px]">
             <a 
               href="/" 
               className="text-xl font-bold tracking-wider text-gradient hover:opacity-80 transition-opacity"
@@ -45,9 +45,9 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-1">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex flex-1 justify-center">
+            <div className="flex items-baseline space-x-1">
               {navItems.map((item) => (
                 <a
                   key={item.label}
@@ -60,6 +60,9 @@ export default function Navbar() {
               ))}
             </div>
           </div>
+
+          {/* Spacer for balance */}
+          <div className="hidden md:block w-[180px]"></div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
