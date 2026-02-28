@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 const filters = [
   { label: "All", value: "all" },
@@ -11,22 +11,25 @@ const filters = [
   { label: "Book", value: "book" },
 ];
 
-export default function FilterTabs() {
-  const [activeFilter, setActiveFilter] = useState("all");
-  const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 });
-  const tabsRef = useRef<(HTMLButtonElement | null)[]>([]);
+interface FilterTabsProps {
+  activeFilter: string;
+  onFilterChange: (filter: string) => void;
+}
+
+export default function FilterTabs({ activeFilter, onFilterChange }: FilterTabsProps) {
+  const indicatorRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const activeIndex = filters.findIndex(f => f.value === activeFilter);
-    const activeTab = tabsRef.current[activeIndex];
-    if (activeTab && containerRef.current) {
-      const containerRect = containerRef.current.getBoundingClientRect();
-      const tabRect = activeTab.getBoundingClientRect();
-      setIndicatorStyle({
-        left: tabRect.left - containerRect.left + containerRef.current.scrollLeft,
-        width: tabRect.width,
-      });
+    const container = containerRef.current;
+    if (!container) return;
+
+    const activeButton = container.querySelector(`[data-filter="${activeFilter}"]`) as HTMLElement;
+    if (activeButton && indicatorRef.current) {
+      const containerRect = container.getBoundingClientRect();
+      const buttonRect = activeButton.getBoundingClientRect();
+      indicatorRef.current.style.left = `${buttonRect.left - containerRect.left + container.scrollLeft}px`;
+      indicatorRef.current.style.width = `${buttonRect.width}px`;
     }
   }, [activeFilter]);
 
@@ -39,19 +42,16 @@ export default function FilterTabs() {
         >
           {/* Animated indicator */}
           <div 
+            ref={indicatorRef}
             className="absolute bottom-3 h-0.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full transition-all duration-300 ease-out"
-            style={{
-              left: indicatorStyle.left,
-              width: indicatorStyle.width,
-            }}
           />
           
           <div className="flex items-center space-x-1">
-            {filters.map((filter, index) => (
+            {filters.map((filter) => (
               <button
                 key={filter.value}
-                ref={el => { tabsRef.current[index] = el; }}
-                onClick={() => setActiveFilter(filter.value)}
+                data-filter={filter.value}
+                onClick={() => onFilterChange(filter.value)}
                 className={`relative px-5 py-2 text-sm font-medium whitespace-nowrap transition-all duration-300 rounded-full ${
                   activeFilter === filter.value
                     ? "text-white"

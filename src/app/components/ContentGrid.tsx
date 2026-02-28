@@ -126,7 +126,15 @@ const getTypeColor = (type: string) => {
   }
 };
 
-export default function ContentGrid() {
+interface ContentGridProps {
+  activeFilter: string;
+}
+
+export default function ContentGrid({ activeFilter }: ContentGridProps) {
+  const filteredItems = activeFilter === "all"
+    ? contentItems
+    : contentItems.filter(item => item.type.toLowerCase() === activeFilter);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0f0f0f] to-[#0a0a0a] py-8 pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,7 +142,7 @@ export default function ContentGrid() {
 
         {/* Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
-          {contentItems.map((item, index) => (
+          {filteredItems.map((item, index) => (
             <a
               key={item.id}
               href="#"
@@ -187,12 +195,21 @@ export default function ContentGrid() {
           ))}
         </div>
 
+        {/* Empty State */}
+        {filteredItems.length === 0 && (
+          <div className="flex flex-col items-center justify-center py-20">
+            <p className="text-gray-400 text-lg">No items found</p>
+          </div>
+        )}
+
         {/* Load More Button */}
-        <div className="mt-12 text-center">
-          <button className="px-8 py-3 rounded-full border border-white/10 text-gray-300 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300 text-sm font-medium">
-            Load More
-          </button>
-        </div>
+        {filteredItems.length > 0 && (
+          <div className="mt-12 text-center">
+            <button className="px-8 py-3 rounded-full border border-white/10 text-gray-300 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300 text-sm font-medium">
+              Load More
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
