@@ -27,7 +27,7 @@ const bandMembers = [
     nameEn: "Tahara Kenichi",
     role: "Guitar",
     description: "田原健一はMr.Childrenのギタリストとして、1970年2月24日生まれ。東京の中学校で他のメンバーと出会い、バンドの結成に参加しました。繊細で感情豊かなギターワークが特徴で、桜井のボーカルと絶妙な相性を持っています。",
-    image: "https://images.unsplash.com/photo-1525201548942-d8732f6617a0?w=400&h=500&fit=crop",
+    image: "https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?w=400&h=500&fit=crop",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const bandMembers = [
     nameEn: "Nakagawa Keisuke",
     role: "Bass",
     description: "中川敬輔はMr.Childrenのベーシストとして、1969年10月9日生まれ。東京の中学校で他のメンバーと出会い、バンドの基盤を支える重要な存在です。安定したベースラインとグルーブ感あふれる演奏がバンドのサウンドに深みを与えています。",
-    image: "https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?w=400&h=500&fit=crop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_qM69Fafc-E5h7ga7FlGSihlWUhANR0kCw&s",
   },
   {
     id: 4,
