@@ -348,6 +348,46 @@ export default function FatherMotherPage() {
                   <p className="text-gray-500 text-sm">2026.02.10</p>
                 </div>
               </div>
+
+              {/* Message Box 6 - Thank You to Fans - Warm Gradient */}
+              <div className="bg-gradient-to-br from-rose-900/40 via-orange-900/40 to-amber-900/40 rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-4">
+                    <span className="text-xl">💝</span>
+                    <span className="text-sm text-gray-400">Thank You</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gradient">ファンの皆様へ感謝の言葉</h3>
+                </div>
+                
+                <blockquote className="text-gray-300 leading-relaxed text-center max-w-2xl mx-auto space-y-4">
+                  <p className="text-lg">
+                    いつもMr.Childrenを応援してくださり、本当にありがとうございます。
+                  </p>
+                  <p>
+                    皆様の温かい声援が、私たちの音楽活動の原動力となっています。ライブでの歓声、SNSでのメッセージ、日々の応援、一つ一つが私たちの大切な宝物です。
+                  </p>
+                  <p>
+                    これからも皆様と一緒に、音楽を通じて心を繋いでいきたいと思います。新しい曲、新しいライブ、新しい出会い。すべてが皆様との共有の時間になりますように。
+                  </p>
+                  <p className="text-xl font-medium text-white mt-6">
+                    これからもどうぞよろしくお願いします！
+                  </p>
+                </blockquote>
+                
+                <div className="mt-8 flex items-center justify-center gap-4">
+                  <div className="flex -space-x-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎤</div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎸</div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎸</div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🥁</div>
+                  </div>
+                  <span className="text-gray-400 text-sm">Mr.Children</span>
+                </div>
+                
+                <div className="mt-6 pt-6 border-t border-white/5 text-center">
+                  <p className="text-gray-500 text-sm">2026.02.28</p>
+                </div>
+              </div>
             </div>
           )}
         </div>
