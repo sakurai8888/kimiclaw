@@ -256,11 +256,11 @@ export default function FatherMotherPage() {
               <div className="bg-gradient-to-br from-[#0f1f2e] via-[#152635] to-[#0d1a24] rounded-3xl p-8 md:p-10 border border-cyan-500/20 shadow-xl shadow-cyan-500/5">
                 <div className="flex items-start gap-5 mb-6">
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-2xl shadow-lg shadow-cyan-500/30">
-                    🎹
+                    🎸
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-white">中川敬輔</h3>
-                    <p className="text-cyan-400 text-sm">Keyboard</p>
+                    <p className="text-cyan-400 text-sm">Bass</p>
                   </div>
                 </div>
                 
@@ -338,7 +338,7 @@ export default function FatherMotherPage() {
                   <div className="flex -space-x-3">
                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎤</div>
                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎸</div>
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎹</div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎸</div>
                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🥁</div>
                   </div>
                   <span className="text-gray-400 text-sm">Mr.Children</span>
