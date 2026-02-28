@@ -187,39 +187,165 @@ export default function FatherMotherPage() {
 
           {/* Message Tab */}
           {activeTab === "message" && (
-            <div className="max-w-3xl mx-auto">
+            <div className="space-y-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gradient mb-4">Message</h2>
+                <h2 className="text-3xl font-bold text-gradient mb-4">Messages</h2>
+                <p className="text-gray-500">バンドメンバーからのメッセージ</p>
               </div>
               
-              <div className="bg-gradient-to-br from-[#181818] to-[#1a1a2e] rounded-3xl p-8 md:p-12 border border-white/5">
-                <div className="flex items-start gap-4 mb-8">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-2xl">
-                    🎵
+              {/* Message Box 1 - Sakurai Kazutoshi - Elegant Dark */}
+              <div className="bg-gradient-to-br from-[#1a1a2e] via-[#1e1e3a] to-[#181824] rounded-3xl p-8 md:p-10 border border-indigo-500/20 shadow-xl shadow-indigo-500/5">
+                <div className="flex items-start gap-5 mb-6">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-2xl shadow-lg shadow-indigo-500/30">
+                    🎤
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white">桜井和寿</h3>
-                    <p className="text-gray-500 text-sm">Vocal & Guitar</p>
+                    <h3 className="text-2xl font-bold text-white">桜井和寿</h3>
+                    <p className="text-indigo-400 text-sm">Vocal & Guitar</p>
                   </div>
                 </div>
                 
-                <blockquote className="text-gray-300 leading-relaxed text-lg space-y-4">
-                  <p>
-                    「FATHER&MOTHER」という名前には、僕たちの音楽の原点と、それを受け継いでいく未来への想いが込められています。
+                <div className="pl-0 md:pl-21">
+                  <blockquote className="text-gray-300 leading-relaxed space-y-4">
+                    <p className="text-lg">
+                      「FATHER&MOTHER」という名前には、僕たちの音楽の原点と、それを受け継いでいく未来への想いが込められています。
+                    </p>
+                    <p>
+                      音楽は人と人を繋ぐ力を持っています。長い歴史の中で支えてくれた皆さんへの感謝と、これから出会う新しい仲間たちへの期待。
+                    </p>
+                  </blockquote>
+                </div>
+                
+                <div className="mt-6 pt-6 border-t border-white/5 flex justify-end">
+                  <p className="text-gray-500 text-sm">2026.02.15</p>
+                </div>
+              </div>
+
+              {/* Message Box 2 - Tahara Kenichi - Warm Earth Tone */}
+              <div className="bg-gradient-to-br from-[#2d2418] via-[#3d2f1f] to-[#1f1812] rounded-3xl p-8 md:p-10 border border-amber-500/20 shadow-xl shadow-amber-500/5">
+                <div className="flex items-start gap-5 mb-6">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-2xl shadow-lg shadow-amber-500/30">
+                    🎸
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">田原健一</h3>
+                    <p className="text-amber-400 text-sm">Guitar</p>
+                  </div>
+                </div>
+                
+                <div className="pl-0 md:pl-21">
+                  <blockquote className="text-gray-300 leading-relaxed space-y-4">
+                    <p className="text-lg">
+                      ギターを弾き始めて30年以上。FATHER&MOTHERは、僕にとって新しい挑戦の場です。
+                    </p>
+                    <p>
+                      これまで培ってきたサウンドと、これから生まれる新しい音。両方を大切にしながら、最高の音楽を届けたいと思います。
+                    </p>
+                    <p className="text-amber-200/80 italic">
+                      "音楽は、時間を超えて人の心に届くものだと信じています。"
+                    </p>
+                  </blockquote>
+                </div>
+                
+                <div className="mt-6 pt-6 border-t border-white/5 flex justify-end">
+                  <p className="text-gray-500 text-sm">2026.02.14</p>
+                </div>
+              </div>
+
+              {/* Message Box 3 - Nakagawa Keisuke - Cool Blue */}
+              <div className="bg-gradient-to-br from-[#0f1f2e] via-[#152635] to-[#0d1a24] rounded-3xl p-8 md:p-10 border border-cyan-500/20 shadow-xl shadow-cyan-500/5">
+                <div className="flex items-start gap-5 mb-6">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-2xl shadow-lg shadow-cyan-500/30">
+                    🎹
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">中川敬輔</h3>
+                    <p className="text-cyan-400 text-sm">Keyboard</p>
+                  </div>
+                </div>
+                
+                <div className="pl-0 md:pl-21">
+                  <blockquote className="text-gray-300 leading-relaxed space-y-4">
+                    <p className="text-lg">
+                      キーボードの音色で、FATHER&MOTHERの世界観を表現できることに興奮しています。
+                    </p>
+                    <p>
+                      デジタルとアナログの融合。新しい技術と伝統的な音作りのバランスを大切にしながら、みなさんに感動を届けます。
+                    </p>
+                  </blockquote>
+                </div>
+                
+                <div className="mt-6 pt-6 border-t border-white/5 flex justify-end">
+                  <p className="text-gray-500 text-sm">2026.02.13</p>
+                </div>
+              </div>
+
+              {/* Message Box 4 - Suzuki Hideya - Fresh Green */}
+              <div className="bg-gradient-to-br from-[#1a2e1a] via-[#1f3d1f] to-[#142414] rounded-3xl p-8 md:p-10 border border-emerald-500/20 shadow-xl shadow-emerald-500/5">
+                <div className="flex items-start gap-5 mb-6">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center text-2xl shadow-lg shadow-emerald-500/30">
+                    🥁
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">鈴木英哉</h3>
+                    <p className="text-emerald-400 text-sm">Drums</p>
+                  </div>
+                </div>
+                
+                <div className="pl-0 md:pl-21">
+                  <blockquote className="text-gray-300 leading-relaxed space-y-4">
+                    <p className="text-lg">
+                      ドラムはバンドの心臓。FATHER&MOTHERのビートを刻む責任を感じています。
+                    </p>
+                    <p>
+                      力強さと優しさを兼ね備えたリズムで、みなさんの心に直接届く演奏を心がけます。ライブで一緒に盛り上がりましょう！
+                    </p>
+                    <div className="flex items-center gap-2 mt-4 text-emerald-300/70">
+                      <span className="text-2xl">🥁</span>
+                      <span className="text-sm">Let's make some noise!</span>
+                    </div>
+                  </blockquote>
+                </div>
+                
+                <div className="mt-6 pt-6 border-t border-white/5 flex justify-end">
+                  <p className="text-gray-500 text-sm">2026.02.12</p>
+                </div>
+              </div>
+
+              {/* Message Box 5 - From All Members - Special Gradient */}
+              <div className="bg-gradient-to-r from-indigo-900/40 via-purple-900/40 to-pink-900/40 rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-4">
+                    <span className="text-xl">👨‍👩‍👧‍👦</span>
+                    <span className="text-sm text-gray-400">From All Members</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gradient">ファンの皆様へ</h3>
+                </div>
+                
+                <blockquote className="text-gray-300 leading-relaxed text-center max-w-2xl mx-auto space-y-4">
+                  <p className="text-lg">
+                    FATHER&MOTHERは、私たちMr.Childrenとファンの皆様が一緒に作り上げるプロジェクトです。
                   </p>
                   <p>
-                    音楽は人と人を繋ぐ力を持っています。長い歴史の中で支えてくれた皆さんへの感謝と、これから出会う新しい仲間たちへの期待。
+                    これからも音楽を通じて、たくさんの思い出を共に作っていきましょう。
                   </p>
-                  <p>
-                    このプロジェクトを通じて、より多くの人々と「音楽」という形で繋がっていけたらと思います。
+                  <p className="text-xl font-medium text-white mt-6">
+                    これからもよろしくお願いします！
                   </p>
                 </blockquote>
                 
-                <div className="mt-8 pt-8 border-t border-white/10">
-                  <p className="text-gray-500 text-sm text-right">
-                    2026年2月<br />
-                    Mr.Children
-                  </p>
+                <div className="mt-8 flex items-center justify-center gap-4">
+                  <div className="flex -space-x-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎤</div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎸</div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🎹</div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center text-sm border-2 border-[#0f0f0f]">🥁</div>
+                  </div>
+                  <span className="text-gray-400 text-sm">Mr.Children</span>
+                </div>
+                
+                <div className="mt-6 pt-6 border-t border-white/5 text-center">
+                  <p className="text-gray-500 text-sm">2026.02.10</p>
                 </div>
               </div>
             </div>
