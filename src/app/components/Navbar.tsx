@@ -47,7 +47,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a 
-              href="#" 
+              href="/" 
               className="text-xl font-bold tracking-wider text-gradient hover:opacity-80 transition-opacity"
             >
               Mr.Children
