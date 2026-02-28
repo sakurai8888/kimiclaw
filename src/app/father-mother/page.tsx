@@ -30,7 +30,7 @@ const conceptCards = [
 const galleryItems = [
   { id: 1, title: "Special Live 2024", date: "2024.12.15", image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=400&h=300&fit=crop" },
   { id: 2, title: "Documentary Film", date: "2024.08.20", image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&h=300&fit=crop" },
-  { id: 3, title: "Fan Meeting", date: "2024.05.10", image: "https://images.unsplash.com/photo-1459749411177-047381bb3ece?w=400&h=300&fit=crop" },
+  { id: 3, title: "Fan Meeting", date: "2024.05.10", image: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=400&h=300&fit=crop" },
   { id: 4, title: "Behind the Scenes", date: "2024.03.01", image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=300&fit=crop" },
 ];
 
