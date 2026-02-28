@@ -3,12 +3,12 @@
 import { useState, useEffect } from "react";
 
 const navItems = [
-  { label: "News", href: "#" },
+  { label: "News", href: "/" },
   { label: "Live", href: "#" },
   { label: "Video", href: "#" },
   { label: "Media", href: "#" },
   { label: "Biography", href: "#" },
-  { label: "Discography", href: "#" },
+  { label: "Discography", href: "/discography" },
   { label: "Store", href: "/store" },
   { label: "FATHER&MOTHER", href: "/father-mother" },
 ];
