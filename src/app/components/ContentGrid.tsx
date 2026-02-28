@@ -35,7 +35,7 @@ const contentItems = [
     type: "Download",
     date: "2024.08.30",
     title: "in the pocket",
-    image: "https://images.unsplash.com/photo-1459749411177-047381bb3ece?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=400&h=400&fit=crop",
   },
   {
     id: 6,
