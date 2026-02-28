@@ -13,15 +13,6 @@ const navItems = [
   { label: "FATHER&MOTHER", href: "/father-mother" },
 ];
 
-const socialIcons = [
-  { name: "YouTube", icon: "▶" },
-  { name: "Line", icon: "L" },
-  { name: "X", icon: "X" },
-  { name: "Instagram", icon: "📷" },
-  { name: "Facebook", icon: "f" },
-  { name: "Mail", icon: "✉" },
-];
-
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -68,25 +59,6 @@ export default function Navbar() {
                 </a>
               ))}
             </div>
-          </div>
-
-          {/* Social Icons & Language */}
-          <div className="hidden md:flex items-center space-x-3">
-            <div className="flex items-center space-x-2">
-              {socialIcons.map((social) => (
-                <a
-                  key={social.name}
-                  href="#"
-                  className="w-8 h-8 flex items-center justify-center rounded-full text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-300"
-                  title={social.name}
-                >
-                  <span className="text-xs">{social.icon}</span>
-                </a>
-              ))}
-            </div>
-            <button className="ml-2 px-3 py-1.5 text-xs font-medium border border-white/20 rounded-full text-gray-300 hover:text-white hover:border-white/40 hover:bg-white/5 transition-all duration-300">
-              Language
-            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -158,22 +130,7 @@ export default function Navbar() {
                 </a>
               ))}
             </div>
-            
-            {/* Social icons at bottom */}
-            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/10">
-              <div className="flex items-center justify-center space-x-4">
-                {socialIcons.map((social) => (
-                  <a
-                    key={social.name}
-                    href="#"
-                    className="w-10 h-10 flex items-center justify-center rounded-full text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-300"
-                    title={social.name}
-                  >
-                    <span className="text-sm">{social.icon}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
