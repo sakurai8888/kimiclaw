@@ -4,16 +4,17 @@ import { ObjectId } from 'mongodb';
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const client = await clientPromise;
     const db = client.db('store');
     
     // Get product details
     const product = await db
       .collection('products')
-      .findOne({ _id: new ObjectId(params.id) });
+      .findOne({ _id: new ObjectId(id) });
     
     if (!product) {
       return NextResponse.json(
@@ -34,7 +35,7 @@ export async function GET(
     const reviews = await db
       .collection('reviews')
       .find({ 
-        productId: new ObjectId(params.id),
+        productId: new ObjectId(id),
         status: 'approved'
       })
       .sort({ createdAt: -1 })
