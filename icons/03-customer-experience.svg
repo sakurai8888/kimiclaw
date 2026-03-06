@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Laptop Base -->
+  <rect x="60" y="110" width="80" height="45" rx="3" fill="#34495e" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Laptop Screen -->
+  <rect x="65" y="75" width="70" height="40" rx="2" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2"/>
+  
+  <!-- Screen Content -->
+  <rect x="70" y="80" width="60" height="30" fill="#3498db"/>
+  
+  <!-- Heart Icon on Screen -->
+  <path d="M100 88 C95 85 90 88 90 93 C90 100 100 105 100 105 C100 105 110 100 110 93 C110 88 105 85 100 88" fill="#e74c3c"/>
+  
+  <!-- Person Left -->
+  <circle cx="45" cy="100" r="12" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+  <path d="M45 115 L45 140" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Person Right -->
+  <circle cx="155" cy="100" r="12" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+  <path d="M155 115 L155 140" stroke="#9b59b6" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Connection Lines -->
+  <path d="M57 100 L65 95" stroke="#27ae60" stroke-width="2" stroke-dasharray="3,2"/>
+  <path d="M143 100 L135 95" stroke="#27ae60" stroke-width="2" stroke-dasharray="3,2"/>
+  
+  <!-- Chat Bubbles -->
+  <rect x="25" y="70" width="20" height="15" rx="3" fill="#2ecc71"/>
+  <rect x="155" y="70" width="20" height="15" rx="3" fill="#2ecc71"/>
+  
+  <!-- Text Label -->
+  <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Customer Experience</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Shield Shape -->
+  <path d="M100 30 L150 50 L150 100 C150 140 100 170 100 170 C100 170 50 140 50 100 L50 50 Z" fill="#4a90e2" stroke="#2c5aa0" stroke-width="3"/>
+  
+  <!-- Inner Badge/Star -->
+  <polygon points="100,65 108,85 130,85 113,98 119,118 100,106 81,118 87,98 70,85 92,85" fill="#ffffff" stroke="#2c5aa0" stroke-width="2"/>
+  
+  <!-- Text Label -->
+  <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Branding</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Rocket Body -->
+  <ellipse cx="100" cy="100" rx="25" ry="50" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  
+  <!-- Rocket Window -->
+  <circle cx="100" cy="85" r="12" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <circle cx="100" cy="85" r="8" fill="#87ceeb"/>
+  
+  <!-- Rocket Fins Left -->
+  <path d="M75 120 L55 150 L75 140 Z" fill="#c0392b" stroke="#922b21" stroke-width="2"/>
+  
+  <!-- Rocket Fins Right -->
+  <path d="M125 120 L145 150 L125 140 Z" fill="#c0392b" stroke="#922b21" stroke-width="2"/>
+  
+  <!-- Speed Lines -->
+  <path d="M70 60 L55 40" stroke="#f39c12" stroke-width="4" stroke-linecap="round"/>
+  <path d="M85 45 L75 25" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <path d="M115 45 L125 25" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <path d="M130 60 L145 40" stroke="#f39c12" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Flame -->
+  <polygon points="100,155 90,175 100,170 110,175" fill="#f39c12"/>
+  
+  <!-- Text Label -->
+  <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">Time-to-Market</text>
+</svg>
